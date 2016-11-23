@@ -1,0 +1,13 @@
+/target/
+/build/
+/classes/
+/bin/
+/dist/
+/output/
+/test-output/
+/javadoc/
+*.class
+*.jar
+*.bak
+*.*~
+/nbproject/private/
