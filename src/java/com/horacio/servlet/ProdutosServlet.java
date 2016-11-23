@@ -49,6 +49,7 @@ public class ProdutosServlet extends HttpServlet {
         produto.setEstoque(Integer.parseInt(estoque));
         CadastroProdutos.addProduto(produto);
         System.out.println(produto.toString());
+        resp.sendRedirect("");
     }
 
     @Override
