@@ -1,0 +1,23 @@
+{
+  "name": "cadastro-de-produtos",
+  "version": "1.0.0",
+  "description": "> Simples aplicação web para cadastro de produtos utilizando Java Servlets e JSP.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horaciosystem/cadastro-produtos.git"
+  },
+  "author": "Horacio A. Fernandes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/horaciosystem/cadastro-produtos/issues"
+  },
+  "homepage": "https://github.com/horaciosystem/cadastro-produtos#readme",
+  "dependencies": {}
+}

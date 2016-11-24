@@ -6,19 +6,21 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html>    
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/bulma.css" />
+        <link rel="stylesheet" href="css/base.scss" />
+        <title>Cadastro de Produtos</title>
     </head>
-    <body>
-        <div>
-            <h1>Cadastro de Produtos</h1>            
-        </div>
-        <div>
-            <a href="novo-produto.jsp">Novo Produto</a>
-        </div>
-        <div>
+    <body>        
+        <div class="main-container">
+            <div class="title-box">
+                <h1 class="title">Cadastro de Produtos</h1>            
+            </div>
+            <div class="button-box">
+                <a id="novo-produto" class="button is-primary" href="novo-produto.jsp">Novo Produto</a>
+            </div>
             <jsp:include page="lista-produtos.jsp" />
         </div>
     </body>
