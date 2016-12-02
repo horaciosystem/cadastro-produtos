@@ -13,7 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <table class="table">
+        <table class="table is-striped">
             <thead>
                 <tr>
                     <th>Id</th>

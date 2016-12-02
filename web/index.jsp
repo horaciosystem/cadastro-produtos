@@ -9,7 +9,6 @@
 <html>    
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="css/bulma.css" />
         <link rel="stylesheet" href="css/base.scss" />
         <title>Cadastro de Produtos</title>
     </head>
