@@ -31,7 +31,7 @@ public class ProdutosServlet extends HttpServlet {
                 
         String id = request.getParameter("id");
         String descricao = request.getParameter("descricao");  
-//        String categoria = request.getParameter("categoria");  
+        String categoria = request.getParameter("categoria");  
         String preco = request.getParameter("preco");  
         String cor = request.getParameter("cor");  
         String peso = request.getParameter("peso");  
@@ -41,7 +41,7 @@ public class ProdutosServlet extends HttpServlet {
         Produto produto = new Produto();
         produto.setId(Integer.parseInt(id));
         produto.setDescricao(descricao);
-//        produto.setCategoria(Integer.parseInt(categoria));
+        produto.setCategoria(Integer.parseInt(categoria));
         produto.setPreco(Double.parseDouble(preco));
         produto.setCor(cor);
         produto.setPeso(Double.parseDouble(peso));

@@ -5,6 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="com.horacio.controller.CadastroProdutos" %>
+<%@page import="java.util.Map.Entry" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,7 +18,6 @@
             <div class="title-box">
                 <h1 class="title">Novo Produto</h1>
             </div>
-
             <form action="${pageContext.request.contextPath}/novo-produto" method="post">
                 <div class="button-box">
                     <input class="button is-success save-button" type="submit" name="submit"
@@ -24,8 +25,8 @@
                      />
                     <a class="button is-primary" href="/cadastro-de-produtos">Voltar</a>
                 </div>
-                <div id="notification" class="notification is-danger">
-                  <h2 class="subtitle"> Atênção! Todos os campos devem ser preenchidos.</h2>
+                <div id="notification" class="notification is-danger hidden">
+                  <h2 class="subtitle is-5"> Atênção! Todos os campos devem ser preenchidos.</h2>
                 </div>
                 <div class="columns">
                     <div class="column is-6">
@@ -38,9 +39,10 @@
                         <label class="label">Categoria</label>
                         <p class="control">
                             <span class="select">
-                                <select>
-                                    <option>Select dropdown</option>
-                                    <option>With options</option>
+                                <select name="categoria">
+                                    <% for (Entry<String, String> categoria : CadastroProdutos.listCategorias().entrySet()) { %>
+                                      <option value=<%= categoria.getKey() %> label=<%= categoria.getValue() %> />
+                                    <% } %>
                                 </select>
                             </span>
                         </p>
