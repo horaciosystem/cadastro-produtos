@@ -30,7 +30,7 @@
                 </div>
                 <div class="columns">
                     <div class="column is-6">
-                        <label class="label">Id</label>
+                        <label class="label">ID</label>
                         <p class="control">
                             <input id="id" class="input" type="number" name="id" value="">
                         </p>
@@ -56,9 +56,9 @@
                         </p>
                     </div>
                     <div class="column is-6">
-                        <label class="label">Preço</label>
+                        <label class="label">Preço (R$)</label>
                         <p class="control has-icon has-icon-right">
-                            <input class="input" type="number" name="preco" value="">
+                            <input class="input" type="number" name="preco" value="" step="any">
                         </p>
                     </div>
                 </div>
@@ -70,9 +70,9 @@
                         </p>
                     </div>
                     <div class="column is-6">
-                        <label class="label">Peso</label>
+                        <label class="label">Peso (Kg)</label>
                         <p class="control has-icon has-icon-right">
-                            <input class="input" type="number" name="peso" value="">
+                            <input class="input" type="number" name="peso" value="" step="any">
                         </p>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                         </p>
                     </div>
                     <div class="column is-6">
-                        <label class="label">Estoque</label>
+                        <label class="label">Cód. Estoque</label>
                         <p class="control has-icon has-icon-right">
                             <input class="input" type="number" name="estoque" value="">
                         </p>

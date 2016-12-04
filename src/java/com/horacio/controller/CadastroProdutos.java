@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.horacio.controller;
 
 import com.horacio.model.Produto;
@@ -32,14 +27,13 @@ public class CadastroProdutos {
             return categorias;
         else 
             return loadDefaultCategories();
-        
     }
     
     private static Map<String, String> loadDefaultCategories() {        
         categorias = new HashMap<>();
         categorias.put("1", "Eletrônicos");
         categorias.put("2", "Roupas");
-        categorias.put("3", "Calçados");
+        categorias.put("3", "Calçados");        
         return categorias;
     }
     

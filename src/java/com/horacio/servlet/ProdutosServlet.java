@@ -9,7 +9,6 @@ import com.horacio.controller.CadastroProdutos;
 import com.horacio.model.Produto;
 import java.io.IOException;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -20,11 +19,6 @@ import javax.servlet.http.HttpServletResponse;
  */
 
 public class ProdutosServlet extends HttpServlet {
-
-    @Override
-    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doDelete(req, resp); //To change body of generated methods, choose Tools | Templates.
-    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
@@ -47,15 +41,15 @@ public class ProdutosServlet extends HttpServlet {
         produto.setPeso(Double.parseDouble(peso));
         produto.setFornecedor(fornecedor);
         produto.setEstoque(Integer.parseInt(estoque));
-        CadastroProdutos.addProduto(produto);
-        System.out.println(produto.toString());
-        resp.sendRedirect("");
+        CadastroProdutos.addProduto(produto);        
+        
+        resp.sendRedirect(request.getContextPath() + "/index.jsp");
     }
 
     @Override
     public void init() throws ServletException {
         super.init(); 
-        System.out.println("INicializando...");
+        System.out.println("Inicializando...");
     }
 
     

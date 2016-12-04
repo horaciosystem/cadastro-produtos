@@ -1,4 +1,4 @@
-<%-- 
+<%--
     Document   : produtos
     Created on : 21/11/2016, 20:46:51
     Author     : horacio
@@ -9,19 +9,16 @@
 <%@page import="com.horacio.model.Produto" %>
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>JSP Page</title>
-    </head>
     <body>
         <table class="table is-striped">
             <thead>
                 <tr>
-                    <th>Id</th>
+                    <th>ID</th>
                     <th>Descrição</th>
                     <th>Categoria</th>
-                    <th>Preço</th>
+                    <th>Preço (R$)</th>
                     <th>Cor</th>
-                    <th>Peso</th>
+                    <th>Peso (Kg)</th>
                     <th>Fornecedor</th>
                     <th>Estoque</th>
               </tr>
@@ -31,7 +28,7 @@
             <tr>
                 <td><%=produto.getId()%></td>
                 <td><%=produto.getDescricao()%></td>
-                <td><%=produto.getCategoria()%></td>
+                <td><%=CadastroProdutos.listCategorias().get(String.valueOf(produto.getCategoria()))%></td>
                 <td><%=produto.getPreco()%></td>
                 <td><%=produto.getCor()%></td>
                 <td><%=produto.getPeso()%></td>
